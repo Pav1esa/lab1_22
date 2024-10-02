@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Павлеса Олег ПП-21</title>
+	</head>
+	<body>
+		<script> 
+			"use strict";
+			const y = parseFloat(prompt("Введіть значення y", ""));
+			const numerator = 3 * Math.pow(y, 3) + 5 * y - 2;
+			const denominator = Math.sqrt(Math.abs(4 * y - 1)) + y;
+			const result = numerator / denominator;
+			
+			if (denominator !== 0) {
+				alert("Результат обчислення: r = " + result.toFixed(2));
+			} else {
+				alert("Ділення на нуль! Введіть інше значення.");
+			}
+		</script>
+	</body>
+</html>
